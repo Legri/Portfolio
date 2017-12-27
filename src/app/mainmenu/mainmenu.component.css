@@ -1,0 +1,36 @@
+.navbar{
+    font-size: 14px;
+   color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-link{
+    font-size: 14px;
+    color:#ffffff;
+    padding:0 5px ;
+}
+
+.av_frelance{
+position: relative;
+top:-5px;
+}
+
+.navbar {
+    padding:0 5px ;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.bg-light {
+    background-color: #FFFFFF!important;
+}
+
+
+.navbar-md {
+    min-height: 80px !important;
+    border-bottom:solid 2px #C9C9C9;
+  
+    margin-bottom:500px;
+}
