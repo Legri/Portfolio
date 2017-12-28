@@ -19,6 +19,8 @@ import { ContactComponent } from './contact/contact.component';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule, 
     ReactiveFormsModule,
     MatButtonModule,
+    MatTabsModule,
+    MatCardModule,
     RouterModule.forRoot([
       { path:"home",component:HomeComponent},
       { path:"about",component:AboutComponent},
