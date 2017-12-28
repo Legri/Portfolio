@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark " style="background-color: #7C4DFF;">
  <div class="container">
   <div >
-      <a class="nav-link" href="#">
+    <a class="nav-link" routerLink="/contact" routerLinkActive="active">
         <i class="material-icons">drafts</i> 
         <span class="av_frelance d-none d-sm-inline">{{av_frelance}}</span>
       </a>
@@ -19,7 +19,7 @@
 <nav class="navbarm navbar navbar-expand-lg navbar-light bg-light navbar-md">
     <div class="container">
 
-    <a class="navbar-brand d-none d-sm-inline" href="#">KUSMIRCHUK ROMAN</a>
+    <a class="navbar-brand d-none d-sm-inline font-weight-bold" routerLink="/home"  >KUSMIRCHUK ROMAN</a>
     
     <form class="form-inline my-2 my-lg-0">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,16 +29,17 @@
    
     
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav" style="color:#000">
+      <div class="navbar-nav font-weight-bold" style="color:#000">
         
-        <a class="nav-item nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">ABOUT</a>
-        <a class="nav-item nav-link" href="#">SKILL</a>
-        <a class="nav-item nav-link" href="#">EXPERIENCE</a>
-        <a class="nav-item nav-link" href="#">EDUCATION</a>
-        <a class="nav-item nav-link" href="#">WORK</a>
-        <a class="nav-item nav-link" href="#">BLOG</a>
-        <a class="nav-item nav-link" href="#">CONTACT</a>
+        <a class="nav-item nav-link" routerLink="/home" routerLinkActive="active">HOME </a>
+        <a class="nav-item nav-link" routerLink="/about" routerLinkActive="active">ABOUT</a>
+        <a class="nav-item nav-link" routerLink="/skill" routerLinkActive="active">SKILL</a>
+        <a class="nav-item nav-link" routerLink="/experience" routerLinkActive="active">EXPERIENCE</a>
+        <a class="nav-item nav-link" routerLink="/education" routerLinkActive="active">EDUCATION</a>
+        <a class="nav-item nav-link" routerLink="/work" routerLinkActive="active">WORK</a>
+        <a class="nav-item nav-link" routerLink="/blog" routerLinkActive="active">BLOG</a>
+        <a class="nav-item nav-link" routerLink="/contact" routerLinkActive="active">CONTACT</a>
+      
       </div>
     </div>
     </form>

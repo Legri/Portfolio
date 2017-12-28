@@ -31,6 +31,10 @@ top:-5px;
 .navbar-md {
     min-height: 80px !important;
     border-bottom:solid 2px #C9C9C9;
-  
-    margin-bottom:500px;
+    
 }
+
+.bg-light a.active {
+    border-bottom:solid 2px #7C4DFF;
+}
+
