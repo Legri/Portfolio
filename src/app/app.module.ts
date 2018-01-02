@@ -21,6 +21,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {DataService} from './service/data.service';
+import { HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import {MatCardModule} from '@angular/material/card';
     EducationComponent,
     WorkComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +51,7 @@ import {MatCardModule} from '@angular/material/card';
     MatButtonModule,
     MatTabsModule,
     MatCardModule,
+    HttpModule,
     RouterModule.forRoot([
       { path:"home",component:HomeComponent},
       { path:"about",component:AboutComponent},
@@ -56,11 +61,13 @@ import {MatCardModule} from '@angular/material/card';
       { path:"work",component:WorkComponent},
       { path:"blog",component:BlogComponent},
       { path:"contact",component:ContactComponent},
-      {path:"", redirectTo:"home",pathMatch:"full"}
+     
+      {path:"", redirectTo:"home",pathMatch:"full"},
+      { path: '**', component: PageNotFoundComponent },
 
     ])
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
