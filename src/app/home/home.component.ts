@@ -3,6 +3,7 @@ import { HttpClient} from '@angular/common/http';
 import { DataService } from "../service/data.service";
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

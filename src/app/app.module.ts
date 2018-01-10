@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
+
 
 import { AppComponent } from './app.component';
 import { MainmenuComponent } from './mainmenu/mainmenu.component';
@@ -22,8 +22,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import {DataService} from './service/data.service';
 import { HttpModule} from '@angular/http';
+
+import {DataService} from './service/data.service';
+import {ContactService} from './service/contact.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -67,7 +70,7 @@ import { HttpModule} from '@angular/http';
 
     ])
   ],
-  providers: [DataService],
+  providers: [DataService,ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

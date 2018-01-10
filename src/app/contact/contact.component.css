@@ -7,3 +7,10 @@
   .example-full-width {
     width: 100%;
   }
+
+  .ng-valid[required]{
+    border-bottom:2px solid mediumseagreen;
+  }
+  .ng-invalid:not(form){
+    border-bottom:2px solid red;
+  }
