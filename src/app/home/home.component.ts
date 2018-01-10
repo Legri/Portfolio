@@ -11,7 +11,8 @@ import { DataService } from "../service/data.service";
   
 })
 export class HomeComponent implements OnInit {
-  people: Object=[];
+  people: any=[];
+
   
   constructor(private httpService: DataService) {
     
