@@ -21,6 +21,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
+import {MatChipsModule} from '@angular/material/chips';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HttpModule} from '@angular/http';
 
@@ -51,6 +52,7 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
     MatIconModule,
     MatMenuModule,
     MatInputModule,
+    MatChipsModule,
     FormsModule, 
     ReactiveFormsModule,
     MatButtonModule,
