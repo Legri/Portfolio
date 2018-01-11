@@ -13,7 +13,7 @@ import { DataService } from "../service/data.service";
 })
 export class HomeComponent implements OnInit {
   people: any=[];
-
+  isValid=false;
   
   constructor(private httpService: DataService) {
     
@@ -25,5 +25,7 @@ export class HomeComponent implements OnInit {
   });
  
 }
-
+clicked(){
+  this.isValid=! this.isValid;
+}
 }

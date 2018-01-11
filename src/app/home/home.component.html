@@ -6,7 +6,7 @@
    <div class="row">
     
    <div class="col-lg-6">
-      <button style="margin:25px;" class=" rounded mx-auto d-block" mat-raised-button color="primary">DOWNLOAD CV</button>
+      <button style="margin:25px;" (click)="clicked()" class=" rounded mx-auto d-block" mat-raised-button color="primary">DOWNLOAD CV</button>
       
   </div>
   <div class="col-lg-6">
@@ -15,7 +15,13 @@
   </div>
   
   </div>
-  
+  <div class="row" *ngIf="isValid">
+      <div class="col-lg-6">
+          <div class="alert alert-info" role="alert">
+             <a href="assets/data/cv.pdf"  download> <i class="fa fa-file-pdf-o" aria-hidden="true"></i>  cv.pdf</a>
+            </div>
+      </div>
+    </div>
   </div>
   <div class="col-lg-6">
     <img src="assets/images/man01.png" style="position:relative; height:550px;padding-left:50px; bottom:-50px;  " class="img-fluid  d-none d-sm-inline" alt="Responsive image">
@@ -23,3 +29,4 @@
   
 </div>
  
+

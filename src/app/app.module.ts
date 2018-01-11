@@ -27,6 +27,8 @@ import { HttpModule} from '@angular/http';
 import {DataService} from './service/data.service';
 import {ContactService} from './service/contact.service';
 import { RouterModule } from '@angular/router';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
+
 
 @NgModule({
   declarations: [
@@ -55,6 +57,7 @@ import { RouterModule } from '@angular/router';
     MatTabsModule,
     MatCardModule,
     HttpModule,
+    Angular2FontawesomeModule,
     RouterModule.forRoot([
       { path:"home",component:HomeComponent},
       { path:"about",component:AboutComponent},
