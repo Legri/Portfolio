@@ -1,6 +1,8 @@
 import { Component, OnInit} from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { DataService } from "../service/data.service";
+import { Router } from "@angular/router";
+
 
 
 
@@ -15,7 +17,7 @@ export class HomeComponent implements OnInit {
   people: any=[];
   isValid=false;
   
-  constructor(private httpService: DataService) {
+  constructor(private httpService: DataService,private router: Router) {
     
    }
   ngOnInit() {
@@ -27,5 +29,9 @@ export class HomeComponent implements OnInit {
 }
 clicked(){
   this.isValid=! this.isValid;
+}
+
+btnClick(){
+  this.router.navigateByUrl('/contact');
 }
 }

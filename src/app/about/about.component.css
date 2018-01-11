@@ -6,3 +6,18 @@
     padding-bottom: 0px;
     color:#7C4DFF;
 }
+
+.fai{
+    color:#7C4DFF !important; 
+    padding:20px;
+    border: 1px solid #70726F;
+    background:#FFFFFF !important; 
+    border-radius: 5px; 
+}
+
+.fai:hover{
+    color:#FFFFFF !important; 
+    padding:20px;
+    border: 1px solid #70726F;
+    background:#7C4DFF !important; 
+}
