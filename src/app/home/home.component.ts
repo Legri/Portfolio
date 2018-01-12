@@ -16,6 +16,7 @@ import { Router } from "@angular/router";
 export class HomeComponent implements OnInit {
   people: any=[];
   isValid=false;
+  isValidContact=false;
   
   constructor(private httpService: DataService,private router: Router) {
     
@@ -32,6 +33,7 @@ clicked(){
 }
 
 btnClick(){
-  this.router.navigateByUrl('/contact');
+  //this.router.navigateByUrl('/contact');
+  this.isValidContact=!this.isValidContact;
 }
 }
