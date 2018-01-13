@@ -75,7 +75,7 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
 
     ])
   ],
-  providers: [DataService,ContactService],
+  providers: [DataService,ContactService,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
